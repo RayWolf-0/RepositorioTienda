@@ -20,7 +20,7 @@ public class TiendaService {
         return tiendarespository.findAll();
     }
 
-    public Tienda BuscarunaTienda(Long id_tienda){
+    public Tienda BuscarunaTienda(int id_tienda){
         return tiendarespository.findById(id_tienda).get();
     }
 
@@ -28,7 +28,7 @@ public class TiendaService {
         return tiendarespository.save(nombre);
     }
 
-    public void EliminarTienda(Long id_tienda){
+    public void EliminarTienda(int id_tienda){
         tiendarespository.deleteById(id_tienda);
     }
 

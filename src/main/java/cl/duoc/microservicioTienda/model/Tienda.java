@@ -20,7 +20,7 @@ public class Tienda {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_TIENDA")
-    private Long id_tienda;
+    private int id_tienda;
 
     @Column(name= "NOMBRE", nullable = false, length = 100)
     private String nombre;
